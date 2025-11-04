@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.TableDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <TableView fx:id="table" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colName" text="Name" prefWidth="200"/>
+            <TableColumn fx:id="colId" text="ID" prefWidth="150"/>
+            <TableColumn fx:id="colCgpa" text="CGPA" prefWidth="100"/>
+        </columns>
+    </TableView>
+    <HBox spacing="8">
+        <TextField fx:id="txtName" promptText="Name"/>
+        <TextField fx:id="txtId" promptText="ID"/>
+        <TextField fx:id="txtCgpa" promptText="CGPA"/>
+        <Button text="Add Student" onAction="#addStudent"/>
+    </HBox>
+</VBox>

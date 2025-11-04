@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.MenuBarDemoController" spacing="10" style="-fx-padding:15;">
+    <MenuBar>
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New" onAction="#newFile"/>
+                    <MenuItem text="Open" onAction="#openFile"/>
+                    <MenuItem text="Exit" onAction="#exitApp"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <Button text="Back Home" onAction="#backHome"/>
+    <Label fx:id="lblStatus" text="Status: Ready"/>
+</VBox>

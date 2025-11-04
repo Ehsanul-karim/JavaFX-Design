@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.DataPassingDisplayController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <Label text="Scene 2: Received Data"/>
+    <Label fx:id="lblReceived" style="-fx-font-size: 16px;"/>
+</VBox>

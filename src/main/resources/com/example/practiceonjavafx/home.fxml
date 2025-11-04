@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.HomeController">
+    <top>
+        <Label text="JavaFX Complete Tutorial — Home" style="-fx-font-size: 18px; -fx-padding: 10;" />
+    </top>
+    <left>
+        <VBox spacing="8" style="-fx-padding:10;">
+            <Button text="Layouts and Scene Graph" onAction="#openLayoutDemo"/>
+            <Button text="Event Handling" onAction="#openEventDemo"/>
+            <Button text="Controls (RB/CB/Choice/Combo/Date/Color)" onAction="#openControlsDemo"/>
+            <Button text="Scene Switch and Data Passing" onAction="#openDataPassingEntry"/>
+            <Button text="ImageView (Change Image)" onAction="#openImageViewDemo"/>
+            <Button text="TableView (Add Rows)" onAction="#openTableDemo"/>
+            <Button text="ProgressBar (Accumulate)" onAction="#openProgressDemo"/>
+            <Button text="Slider and Spinner" onAction="#openSliderSpinnerDemo"/>
+            <Button text="ListView" onAction="#openListViewDemo"/>
+            <Button text="TreeView" onAction="#openTreeViewDemo"/>
+            <Button text="MenuBar" onAction="#openMenuBarDemo"/>
+            <Button text="Alerts" onAction="#openAlertsDemo"/>
+            <Button text="FileChooser (Image)" onAction="#openFileChooserDemo"/>
+        </VBox>
+    </left>
+    <center>
+        <Label text="Select a demo from the left menu." />
+    </center>
+</BorderPane>

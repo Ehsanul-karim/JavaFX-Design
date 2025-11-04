@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.AlertsDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <HBox spacing="10">
+        <Button text="Info" onAction="#showInfo"/>
+        <Button text="Warning" onAction="#showWarn"/>
+        <Button text="Error" onAction="#showError"/>
+    </HBox>
+</VBox>

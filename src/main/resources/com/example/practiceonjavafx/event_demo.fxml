@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.EventDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <Label text="Event Handling from Code" />
+    <Button fx:id="btnHello" text="Say Hello"/>
+    <Label fx:id="lblMessage"/>
+    <TextField fx:id="txtEnter" promptText="Press Enter"/>
+</VBox>

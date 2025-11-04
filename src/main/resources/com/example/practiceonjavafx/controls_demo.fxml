@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.ControlsDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <TitledPane text="RadioButton + ToggleGroup">
+        <VBox spacing="5">
+            <HBox spacing="10"><RadioButton fx:id="rMale" text="Male"/><RadioButton fx:id="rFemale" text="Female"/></HBox>
+            <Label fx:id="lblGender" text="Gender: "/>
+            <Button text="Show Gender" onAction="#showGender"/>
+        </VBox>
+    </TitledPane>
+
+    <TitledPane text="CheckBox">
+        <VBox spacing="5">
+            <HBox spacing="10"><CheckBox fx:id="chkReading" text="Reading"/><CheckBox fx:id="chkGaming" text="Gaming"/><CheckBox fx:id="chkTravel" text="Traveling"/></HBox>
+            <Button text="Show Hobbies" onAction="#showHobbies"/>
+            <Label fx:id="lblHobbies"/>
+        </VBox>
+    </TitledPane>
+
+    <TitledPane text="ChoiceBox → background color">
+        <HBox spacing="10">
+            <ChoiceBox fx:id="choiceColor"/>
+            <Label text="Pick a color to change background."/>
+        </HBox>
+    </TitledPane>
+
+    <TitledPane text="ComboBox (Countries)">
+        <HBox spacing="10">
+            <ComboBox fx:id="comboCountry"/>
+            <Label fx:id="lblCountry"/>
+        </HBox>
+    </TitledPane>
+
+    <TitledPane text="DatePicker + Format">
+        <HBox spacing="10">
+            <DatePicker fx:id="datePicker"/>
+            <Label fx:id="lblDate"/>
+        </HBox>
+    </TitledPane>
+
+    <TitledPane text="ColorPicker → Label text color">
+        <HBox spacing="10">
+            <ColorPicker fx:id="colorPicker"/>
+            <Label fx:id="lblColored" text="Color me!"/>
+        </HBox>
+    </TitledPane>
+</VBox>

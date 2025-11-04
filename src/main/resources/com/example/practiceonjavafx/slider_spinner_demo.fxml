@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.SliderSpinnerDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <Label fx:id="lblFont" text="Resizable Text"/>
+    <Slider fx:id="slider" min="8" max="48" value="16"/>
+    <HBox spacing="10">
+        <Spinner fx:id="spinner" editable="true"/>
+        <Button text="Show Spinner Value" onAction="#showSpinner"/>
+    </HBox>
+    <Label fx:id="lblSpinnerVal"/>
+</VBox>

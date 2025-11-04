@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.ImageViewDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <ImageView fx:id="imageView" fitWidth="200" fitHeight="200" preserveRatio="true"/>
+    <HBox spacing="10">
+        <Button text="Change Image" onAction="#changeImage"/>
+    </HBox>
+</VBox>

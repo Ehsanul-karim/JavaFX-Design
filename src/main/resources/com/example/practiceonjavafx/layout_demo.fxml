@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.LayoutDemoController">
+    <top>
+        <Label text="Layouts and Scene Graph" style="-fx-font-size:16px; -fx-padding:10;"/>
+    </top>
+    <left>
+        <VBox spacing="8" style="-fx-padding:10;">
+            <Button text="Back Home" onAction="#backHome"/>
+        </VBox>
+    </left>
+    <center>
+        <VBox spacing="10" style="-fx-padding:10;">
+            <TitledPane text="HBox">
+                <HBox spacing="8">
+                    <Button text="A"/><Button text="B"/><Button text="C"/>
+                </HBox>
+            </TitledPane>
+            <TitledPane text="VBox">
+                <VBox spacing="8">
+                    <Button text="A"/><Button text="B"/><Button text="C"/>
+                </VBox>
+            </TitledPane>
+            <TitledPane text="FlowPane">
+                <FlowPane hgap="8" vgap="8">
+                    <Button text="Button 1"/><Button text="Button 2"/><Button text="Button 3"/><Button text="Button 4"/>
+                </FlowPane>
+            </TitledPane>
+            <TitledPane text="StackPane">
+                <StackPane prefHeight="100">
+                    <Label text="Centered Label"/>
+                </StackPane>
+            </TitledPane>
+            <TitledPane text="BorderPane">
+                <BorderPane>
+                    <top><Label text="Top"/></top>
+                    <center><Button text="Center"/></center>
+                    <bottom><Label text="Bottom"/></bottom>
+                </BorderPane>
+            </TitledPane>
+        </VBox>
+    </center>
+</BorderPane>

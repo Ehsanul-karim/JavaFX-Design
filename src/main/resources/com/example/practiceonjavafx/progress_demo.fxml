@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.practiceonjavafx.ProgressDemoController" spacing="10" alignment="CENTER" style="-fx-padding:15;">
+    <Button text="Back Home" onAction="#backHome"/>
+    <HBox spacing="8">
+        <TextField fx:id="txtTarget" promptText="Target presses (e.g., 5)"/>
+        <Button text="Accumulate" onAction="#accumulate"/>
+    </HBox>
+    <Label fx:id="lblSum" text="0"/>
+    <ProgressBar fx:id="progress" prefWidth="300"/>
+</VBox>
